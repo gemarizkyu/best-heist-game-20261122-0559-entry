@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Gilded Vault — a midnight heist</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0806; }
+  #game { position: fixed; display: block; touch-action: none; background: #241b13; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Gilded Vault: sneak through the museum, dodge guard vision cones and cameras, steal the main prize and reach the green exit"></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
